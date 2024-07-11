@@ -1,0 +1,294 @@
+/* ================ BASE ================ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #5c5c5c;
+    background: #e9e6e1;
+    line-height: 1.65;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: #0d0d0d;
+    cursor: pointer;
+    min-width: 0;
+    margin-left: 0;
+    padding: .3vw 0 0;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+h1,
+p {
+    margin-top: 0;
+}
+
+input {
+    margin: 0;
+}
+
+/* 
+navar
+*/
+.navbar {
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+    padding: 2vw 5.1vw;
+    position: fixed;
+    top: 0;
+    bottom: auto;
+}
+
+.navbar-services-wrapper {
+    z-index: 1;
+    flex-direction: row;
+    flex: none;
+    justify-content: flex-start;
+    padding-right: 4vw;
+    display: flex;
+    position: relative;
+}
+
+.services-components {
+    z-index: 10;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    grid-column-gap: 2.9vw;
+}
+
+/* 
+navbar logo 
+*/
+.navbar-logo {
+    z-index: 3;
+    width: 5.2vw;
+
+    max-width: 100%;
+    display: inline-block;
+
+    pointer-events: auto;
+}
+
+/* 
+navbar list
+*/
+.navbar-list {
+    align-items: center;
+    display: flex;
+    gap: 1vw;
+}
+
+.text-utilities {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9vw;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition-property: none;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.gap--0 {
+    grid-column-gap: 0;
+}
+
+.text--white {
+    color: #fff;
+}
+
+.text--blue {
+    color: #001aae;
+}
+
+.navbar-div {
+    width: 1.125vw;
+    height: 1px;
+    background-color: #000;
+}
+
+/* 
+hamburger menu
+*/
+.burger-wrapper {
+    width: 2.3vw;
+    height: 2.3vw;
+    grid-row-gap: 0.5vw;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+}
+
+.burger-line {
+    background: #000;
+}
+
+/* Registro */
+.box {
+    width: 100vw;
+    height: 100vh;
+    background: #FFFFFF;
+}
+
+.padding-global {
+    width: 100%;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-columns-container {
+    display: flex;
+    width: 84vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    padding: 2.2em;
+}
+
+.form-column-tittle {
+    font-size: 2em;
+    padding: 0 0 .25em;
+    color: #212529;
+}
+
+.input-flex-group {
+    margin-top: 2em;
+}
+
+.form-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 1.2em;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: .99em;
+    line-height: 1.2em;
+    display: block;
+    margin-bottom: .9em;
+}
+
+.form-input {
+    width: 100%;
+    padding: .9em 1.6875em;
+    border-radius: 5px;
+    border: 1px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 1em;
+    outline: none;
+    border-radius: 0.6em;
+    min-height: 1.7em;
+}
+
+.form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-input-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form__description {
+    font-size: .86em;
+    line-height: 1;
+}
+
+.buttons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2em;
+    padding-right: 2.2em;
+}
+
+.form-cancel-btn {
+    display: block;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: none;
+    font-weight: 500;
+    background: #6c757d;
+    color: white;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: none;
+    font-weight: 500;
+    background-image: linear-gradient(90deg, #001aae 0%, #40c9ff 182.87%);
+    color: white;
+    cursor: pointer;
+}
